@@ -77,16 +77,6 @@ Ensure FFmpeg is added to your system's PATH.
 
 ---
 
-## Screenshots
-
-### Main Interface
-![Main Interface](path/to/screenshot_main.png)
-
-### Progress Indicator
-![Progress Indicator](path/to/screenshot_progress.png)
-
----
-
 ## Roadmap
 
 Planned features for future versions:
