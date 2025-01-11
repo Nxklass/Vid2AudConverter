@@ -1,3 +1,4 @@
+
 # Vid2AudConverter
 
 Vid2AudConverter is a user-friendly Python-based application for converting video and audio files into various audio formats. It provides advanced features like batch processing, format customization, multi-language support, and a clean graphical user interface.
@@ -7,12 +8,13 @@ Vid2AudConverter is a user-friendly Python-based application for converting vide
 ## Features
 
 - **Convert Video to Audio**: Extract audio from video files such as MP4.
-- **Multiple Audio Formats**: Supports MP3, WAV, and FLAC outputs.
-- **Batch Processing**: Convert multiple files simultaneously with a progress indicator.
-- **Custom Bitrate**: Choose from a range of bitrates (64k, 128k, 192k, 256k, 320k).
-- **Multi-Language Support**: Localized interface with gettext.
+- **Multiple Audio Formats**: Supports MP3, WAV, FLAC, OGG, AAC, and M4A outputs.
+- **Batch Processing**: Convert multiple files simultaneously with a detailed progress indicator.
+- **Custom Settings**: Configure bitrate, sample rate, and channels (mono/stereo) for output files.
 - **Drag-and-Drop Functionality**: Easily add files or directories to the application.
-- **Advanced Error Handling**: Ensures a seamless user experience with detailed error messages and logs.
+- **Localized Interface**: Multi-language support with gettext for an inclusive user experience.
+- **Advanced Error Handling**: Ensures seamless usage with detailed error messages and logs.
+- **Performance Optimizations**: Utilizes threading and a thread pool for fast and efficient conversions.
 - **Clean and Responsive GUI**: Built with Tkinter for an intuitive and modern interface.
 
 ---
@@ -28,12 +30,13 @@ Vid2AudConverter is a user-friendly Python-based application for converting vide
   - `wave`
   - `gettext`
   - `concurrent.futures`
+  - `tkinterdnd2`
 
 You can install the required dependencies using pip:
 
 ```bash
 pip install pydub
-pip install tk
+pip install tkinter
 pip install tkinterdnd2
 ```
 
@@ -72,8 +75,11 @@ Ensure FFmpeg is added to your system's PATH.
 
 1. **Add Files**: Use the "Browse" button to select video/audio files or drag and drop files directly into the application.
 2. **Choose Output Directory**: Specify where the converted files will be saved.
-3. **Set Output Format**: Choose from MP3, WAV, or FLAC.
-4. **Customize Bitrate**: Select the desired audio quality.
+3. **Set Output Format**: Choose from MP3, WAV, FLAC, OGG, AAC, or M4A.
+4. **Customize Settings**:
+   - Select the desired **bitrate** (e.g., 64k, 128k, 320k).
+   - Set the **sample rate** (e.g., 44100 Hz, 48000 Hz).
+   - Choose the number of **channels** (Mono or Stereo).
 5. **Start Conversion**: Click the "Convert" button to begin the process.
 
 ---
@@ -84,8 +90,8 @@ Planned features for future versions:
 
 - **Dark Mode**: A theme toggle for better usability.
 - **Metadata Editor**: Edit ID3 tags for MP3 outputs.
-- **Support for More Formats**: Expand input and output format options.
 - **Automatic Updates**: Add a feature to check for and install updates.
+- **Queue Management**: Pause, resume, or reorder conversion tasks.
 
 ---
 
