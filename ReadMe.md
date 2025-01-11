@@ -34,6 +34,7 @@ You can install the required dependencies using pip:
 ```bash
 pip install pydub
 pip install tk
+pip install tkinterdnd2
 ```
 
 ### FFmpeg Installation
